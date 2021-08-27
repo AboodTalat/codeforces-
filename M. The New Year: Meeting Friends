@@ -1,0 +1,74 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner abood = new Scanner(System.in) ;
+ 
+        int dis1 ;
+            int dis2 ;
+                int dis3 ;
+ 
+                dis1 = abood.nextInt();
+                    dis2 = abood.nextInt();
+                        dis3 = abood.nextInt();
+ 
+ 
+            for (int i = 1 ; i <= 3 ; i++) {
+               if (dis1 > dis2 && dis1 > dis3 && dis3 > dis2) {
+                   int a = dis1 - dis3 ;
+                   int b = dis3 - dis2;
+ 
+ 
+                            System.out.println(a + b);
+ 
+                   break;
+               }
+ 
+                else if (dis1 > dis2 && dis1 > dis3 && dis3 < dis2) {
+                   int m = dis2 - dis3 ;
+                   int n = dis1 - dis2;
+ 
+ 
+                       System.out.println(m + n);
+ 
+                   break;
+ 
+               }
+ 
+                else if (dis3 > dis2 && dis3 > dis1 && dis2 > dis1) {
+                    int q = dis2 - dis1 ;
+                    int x = dis3 - dis2 ;
+ 
+                   System.out.println(q + x);
+                   break;
+               }
+ 
+               else if (dis3 > dis2 && dis3 > dis1 && dis2 < dis1) {
+                   int q = dis3 - dis1 ;
+                   int x = dis1 - dis2 ;
+ 
+                   System.out.println(q + x);
+                   break;
+               }
+ 
+               else if (dis2 > dis3 && dis2 > dis1 && dis3 > dis1) {
+                   int q = dis2 - dis3 ;
+                   int x = dis3 - dis1 ;
+ 
+                   System.out.println(q + x);
+                   break;
+               }
+ 
+               else if (dis2 > dis3 && dis2 > dis1 && dis3 < dis1) {
+                   int q = dis2 - dis1 ;
+                   int x = dis1 - dis3 ;
+ 
+                   System.out.println(q + x);
+                   break;
+               }
+            }
+ 
+ 
+    }
+}
