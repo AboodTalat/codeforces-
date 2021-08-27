@@ -1,0 +1,32 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner abood =new Scanner(System.in);
+ 
+        int n = 0;
+            int c = 0 ;
+                int sum = 0 ;
+                   int count = 0 ;
+ 
+ 
+                n = abood.nextInt();
+ 
+                while(n-- > 0) {
+                    c = abood.nextInt();
+ 
+                    if ( sum + c < 0) {
+                        count++ ;
+                    }
+                    else{
+                        sum += c;
+                    }
+                }
+        System.out.println(count);
+ 
+ 
+    }
+ 
+}
+ 
